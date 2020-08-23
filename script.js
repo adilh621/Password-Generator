@@ -19,18 +19,15 @@ function determineLength(){
     }else if (passwordLength>128){
       alert("Password length must be a number between 8-128 characters");
       determineLength();
-    }else if (isNaN(passwordLength)){
-      alert("Password length must be a number between 8-128 characters");
-      determineLength();
     }else{
-    alert("The next three screens will ask you what types of characters you would like to be included in your password.\nIf you choose 'No' for all, your password will only contain lowercase letters.");
+    alert("The next few popups will ask you what types of characters you would like to be included in your password.\nIf you choose 'No' for all, your password will only contain lowercase letters.");
     }
     return passwordLength;
 }
 
 //Function used to determine whether the user wants to include uppercase characters in the password
 function determineUppercase(){
-  uppercaseCheck = confirm("Do you want to include uppercase letters in your password? \n(Yes or No)");
+  uppercaseCheck = confirm("Do you want to include uppercase letters in your password? \n(Choose one)");
     
 
     return uppercaseCheck;
@@ -38,7 +35,7 @@ function determineUppercase(){
 
 //Function used to determine whether the user wants to include numbers in the password
 function determineNumbers(){
-  numberCheck = confirm("Do you want to include numbers in your password? \n(Yes or No)");
+  numberCheck = confirm("Do you want to include numbers in your password? \n(Choose one)");
     
 
 
@@ -47,7 +44,7 @@ function determineNumbers(){
 
 //Function used to determine whether the user wants to include special characters in the password
 function determineSpecial(){
-  specialCheck = confirm("Do you want to include special characters in your password? \n(Yes or No)");
+  specialCheck = confirm("Do you want to include special characters in your password? \n(Choose one)");
    
 
  
@@ -58,6 +55,9 @@ function determineSpecial(){
 answers and generates password*/ 
 
 function generatePassword(){
+
+// first calling all our above functions to get our user input answers
+
   determineLength();
   //log to console the length given from user
   console.log(passwordLength);

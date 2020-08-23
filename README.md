@@ -10,4 +10,4 @@
 
 ## Deployed Website
 
-👑 
+👑 [Click me!](https://adilh621.github.io/Password-Generator-HW3/) 
