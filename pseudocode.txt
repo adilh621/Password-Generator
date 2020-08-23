@@ -1,5 +1,8 @@
 Pseudo code for the password generator app:
 
+Starting our javascript code with variables we will be using
+as well as arrays or strings of characters for each group criterias
+
 When the user presses the generate password button , a series of prompts will show up on users screen 
 
 
@@ -7,9 +10,12 @@ When the user presses the generate password button , a series of prompts will sh
 These prompts are the conditions we need to check in order to generate the password:
 
 The first prompt will ask the user how long they want their password to be
-Then another prompt will ask the user if they would like to include uppercase
-Then another prompt will ask the user if they would like to include numbers
-Then another prompt will ask the user if they would like to include special characters
+Then another confirm prompt will ask the user if they would like to include uppercase
+Then another confirm prompt will ask the user if they would like to include numbers
+Then another confirm prompt will ask the user if they would like to include special characters
 
+For each of our confirm prompts , we recieve either a truth or false statement
+which is then used in our conditional for generating our password
 
 A for loop will be used to iterate through arrays that contain a list of each of these criterias
+Then prints out our concatinated result through the password ID
