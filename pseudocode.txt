@@ -1,0 +1,15 @@
+Pseudo code for the password generator app:
+
+When the user presses the generate password button , a series of prompts will show up on users screen 
+
+
+
+These prompts are the conditions we need to check in order to generate the password:
+
+The first prompt will ask the user how long they want their password to be
+Then another prompt will ask the user if they would like to include uppercase
+Then another prompt will ask the user if they would like to include numbers
+Then another prompt will ask the user if they would like to include special characters
+
+
+A for loop will be used to iterate through arrays that contain a list of each of these criterias
